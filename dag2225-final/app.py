@@ -2,7 +2,7 @@
 """
 Created on Tue Apr 21 14:57:17 2020
 
-@author: etill
+@author: Devin Golla
 """
 
 #import statements
@@ -17,9 +17,13 @@ app = Flask(__name__)
 def hello():
     return render_template("index.html")
 
-@app.route("/1006") 
-def test():
-    return render_template("1006.html")
+@app.route("/assignments.html") 
+def hello1():
+    return render_template("/assignments.html")
+
+@app.route("/classes.html") 
+def hello2():
+    return render_template("/classes.html")
 
 #start the server
 if __name__ == "__main__":
